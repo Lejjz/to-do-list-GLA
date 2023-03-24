@@ -9,10 +9,17 @@
     --color-red2: rgb(146, 22, 17);
 }
 
+img{
+    position: absolute;
+    top: 75%;
+    left: 1%;
+    width: 200px;
+}
+
 body{
     font-family: 'Lato';
-    background-color: var(--color-dark);
-    color: var(--color-white);
+    background-color: rgba(9, 95, 165, 0.61);
+    color: var(--color-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +83,7 @@ body{
 }
 
 #to-do-list li:hover{
-    background-color: var(--color-dark3);
+    background-color: var(--color-white);
     transition: .4s;
     border-radius: 1rem;
     padding-left: 1rem;
