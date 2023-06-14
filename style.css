@@ -72,6 +72,19 @@ button{
     transition: .4s;
 }
 
+#btn-show-weekly-tasks{
+    background-color: var(--color-dark2);
+    color: var(--color-white);
+    border-radius: 0;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-show-weekly-tasks{background-color: var(--color-dark3);
+}
+
 #button:hover{
     background-color: var(--color-dark3);
 }

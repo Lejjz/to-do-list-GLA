@@ -58,6 +58,25 @@ function newWeeklyTask() {
     }
     input.value = '';
   }
+
+  function showWeeklyTasks() {
+    let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
+    let weeklyTasks = values.filter(task => task.isWeekly);
+  
+    if (weeklyTasks.length === 0) {
+      alert('Não há tarefas semanais.');
+      return;
+    }
+  
+    let reset = confirm('Deseja resetar as tarefas semanais?');
+    if (reset) {
+      values = values.filter(task => !task.isWeekly);
+      localStorage.setItem(localStorageKey, JSON.stringify(values));
+      showValues();
+      alert('As tarefas semanais foram resetadas.');
+    }
+  }
+  
   
 
   function showValues() {
